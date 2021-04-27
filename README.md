@@ -170,7 +170,4 @@ schemakg， a knowledge graph for schema that seeks to cover a range of things a
 |地理|动植物园|name-中文名		foreignName-外文名		address-地理位置		floorArea-占地面积		scenicLevel-景点级别		openingHours-开放时间		entranceTicketPrice-门票价格|
 
 # 总结
-本项目旨在收集、整理成目前开放的Schema数据集，用于
-指导
-指导知识图谱
-指导知识图谱构建
+本项目旨在收集、整理成目前开放的Schema数据集，用于指导知识图谱构建。
