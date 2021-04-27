@@ -75,5 +75,5 @@ schemakg， a knowledge graph for schema that seeks to cover a range of things a
 |designate.v|Appointing|Selector;Official;Role;Degree;Depictive;Manner;Means;Result;Circumstances;Function;Time;Place;Body|
 |designate.v|Linguistic_meaning|Form;Meaning;Textual_location;Referent;Degree|
 # 总结
-1、本项目旨在收集、整理成目前开放的Schema数据集，用于指导知识图谱/事件构建。
-2、事件图谱与知识图谱schema的发现，是进行事件图谱建模的一个重要手段，也是十分核心的问题。
+1、本项目旨在收集、整理成目前开放的Schema数据集，用于指导知识图谱/事件构建。  
+2、事件图谱与知识图谱schema的发现，是进行事件图谱建模的一个重要手段，也是十分核心的问题。  
