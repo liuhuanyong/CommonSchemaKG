@@ -50,57 +50,30 @@ schemakg， a knowledge graph for schema that seeks to cover a range of things a
 |文化|文物|name-中文名		foreignName-外文名		address-馆藏地点		unearthedTime-出土时间		era-所属年代		category-类别|
 
 # Framenet Schema（部分）
-| 事件名称 | 事件槽位 |
-| :--- | :---| 
-|Abandonment|Agent;Theme;Place;Time;Manner;Duration;Explanation;Depictive;Degree;Means;Purpose;Event_description
-|Abounding_with|Theme;Location;Degree;Depictive;Time|
-|Absorb_heat|Entity;Container;Heat_source;Place;Medium;Manner;Time;Explanation;Temperature;Duration;Circumstances;Purpose;Depictive;Result|
-|Abundance|Collection;Quantity;Degree;Time;Circumstances;Measure;Place|
-|Abusing|Abuser;Victim;Type;Degree;Place;Time;Manner;Means;Instrument;Purpose;Explanation;Duration;Frequency;Depictive;Circumstances;Period_of_iterations|
-|Access_scenario|Theme;Useful_location;Barrier|
-|Accompaniment|Participant;Co-participant;Participants|
-|Accomplishment|Means;Agent;Instrument;Place;Time;Manner;Explanation;Degree;Goal;Outcome;Circumstances;Duration;Domain;Particular_iteration|
-|Accoutrements|Wearer;Style;Material;Accoutrement;Descriptor;Use;Part;Body_location;Creator;Time_of_creation;Name|
-|Accuracy|Agent;Target;Outcome;Means;Degree;Time;Place;Instrument;Target_value;Deviation;Domain;Circumstances;Frequency|
-|Achieving_first|Cognizer;New_idea;Time;Place;Means;Purpose;Explanation;Field;Instrument;Manner;Basis;Location_of_appearance|
-|Active_substance|Effect;Substance;Descriptor;Type;Name|
-|Activity|Activity;Duration;Place;Time;Agent;Manner|
-|Activity_abandoned_state|Agent;Time;Duration;Activity;Place|
-|Activity_done_state|Agent;Activity;Time;Place|
-|Activity_finish|Depictive;Manner;Result;Co-timed_event;Place;Time;Agent;Activity;Means;Purpose;Degree;Explanation;Circumstances;Containing_event|
-|Activity_ongoing|Duration;Activity;Place;Purpose;Time;Depictive;Manner;Means;Co-timed_event;Agent;Explanation;Event_description;Circumstances|
-|Activity_pause|Activity;Agent;Manner;Means;Place;Time;Purpose;Depictive;Completeness;Duration;Legal_basis;Explanation;Event_description|
-|Activity_paused_state|Agent;Time;Activity;Duration|
-|Activity_prepare|Agent;Activity;Place;Time;Manner;Means;Purpose;Duration;Depictive;Degree;Beneficiary;Iterations;Event_description|
-|Activity_ready_state|Protagonist;Activity;Salient_entity;Time;Result;Duration;Degree|
-|Activity_resume|Duration;Activity;Place;Explanation;Time;Manner;Agent;Circumstances;Depictive;Result;Event_description|
-|Activity_start|Place;Purpose;Time;Depictive;Manner;Means;Activity;Agent;Co-timed_event;Circumstances;Containing_event;Event_description;Explanation;Particular_iteration;New_situation;Communicative_force;Concessive|
-|Activity_stop|Purpose;Place;Time;Depictive;Manner;Result;Agent;Activity;Duration;Means;Co-timed_event;Degree;Frequency;Containing_event;Circumstances;Re-encoding;Explanation;Event_description;Particular_iteration|
-|Actually_occurring_entity|Instance;Type
-|Addiction|Addict;Addictant;Degree;Compeller|
-|Adding_up|Cognizer;Numbers;Result;Time;Place;Purpose;Means;Manner|
-|Adducing|Speaker;Addressee;Manner;Means;Medium;Depictive;Time;Place;Specified_entity;Role;Purpose;Explanation;Containing_event;Event_description;Frequency;Circumstances|
-|Adjacency|Ground;Figure;Distance;Direction;Time;Figures;Deixis;Accessibility;Directness|
-|Adjusting|Agent;Part;Feature;Imposed_purpose;Means;Place;Time;Final_value;Instrument;Purpose;Manner;Degree;Circumstances|
-|Adopt_selection|Agent;Attribute;Value;Time;Manner;Event_description;Depictive;Purpose;Role;Place;Frequency;Containing_event;Circumstances;Re-encoding;Particular_iteration;Means;Instrument;Duration;Explanation;Communicative_force|
-|Aesthetics|Entity;Attribute;Degree;Time;Circumstances;Viewpoint;Place|
-|Affirm_or_deny|Speaker;Message;Addressee;Place;Time;Manner;Iterations;Means;Depictive;Degree;Containing_event;Event_description;Frequency;Internal_cause;Medium;Topic|
-|Age|Entity;Attribute;Age;Degree;Time;Circumstances;Expressor;Descriptor;Duration|
-|Aggregate|Individuals;Aggregate;Aggregate_property;Name;Container_possessor;Domain|
-|Aging|Entity;Time;Circumstances;Manner;Place;Result|
-|Agree_or_refuse_to_act|Speaker;Interlocutor;Medium;Proposed_action;Manner;Depictive;Means;Internal_cause;Place;Time;Purpose;Particular_iteration;Role;Co-timed_event;Frequency;Explanat|ion;Event_description|
-|Agriculture|Agriculturist;Food;Instrument;Duration;Manner;Means;Outcome;Place;Time;Purpose;Frequency;Degree;Ground;Particular_iteration;Type;Event_description;Circumstances|
-|Aiming|Agent;Targeted;Outcome;Means;Time;Depictive;Place;Manner;Duration;Purpose;Particular_iteration;Circumstances;Instrument;Target_location;Location_of_protagonist;Activity;Containing_event;Explanation|
-|Alignment_image_schema|Alignment_match;Ground;Alignment_mismatch|
-|Alliance|Alliance;Members;Purpose;Period_of_existence;Member_1;Member_2;Descriptor|
-|Alternatives|Situation;Agent;Number_of_possibilities;Salient_entity;Purpose|
-|Alternativity|Profiled_alternative;Contrasting_alternative|
-|Amalgamation|Parts;Whole;Part_1;Part_2;Degree;Manner;Result;Time;Place;Depictive;Descriptor|
-|Amassing|Recipient;Mass_theme;Source;Place;Purpose;Explanation;Time;Means;Manner;Result;Duration;Circumstances;Role|
-|Ambient_temperature|Place;Attribute;Temperature;Degree;Time;Circumstances;Weather|
-|Ammunition|Ammunition;Use;Creator;Time_of_creation;Name;Type;Material;Weapon|
-|Amounting_to|Value;Attribute;Time_span;Frequency;Numbers|
-|Animals|Animal;Descriptor;Origin;Characteristic|
-|Annoyance|Experiencer;Topic;Stimulus;Degree;Empathy_target;Expressor;Explanation;Circumstances;State;Parameter;Manner;Time|
+| 事件名称 | 事件大类 | 事件槽位 |
+| :--- | :---| :---| 
+|deploy.v|Arranging|Agent;Theme;Time;Configuration;Manner;Location;Circumstances;Purpose;Instrument;Means;Degree|
+|depose.v|Change_of_leadership|Selector;Old_leader;New_leader;Role;Old_order;Degree;Depictive;Manner;Means;Result;Circumstances;Function;Time;Place;Body|
+|deposit.v|Placing|Agent;Theme;Source;Path;Goal;Manner;Degree;Depictive;Means;Result;Duration;Place;Explanation;Time;Area;Cotheme;Distance;Speed;Cause;Purpose;Beneficiary|
+|deprecate.v|Judgment_communication|Addressee;Communicator;Medium;Topic;Degree;Evaluee;Expressor;Manner;Means;Reason;Role;Result;Depictive;Grounds;Extent_of_acclaim;Time;Place;Internal_cause;Frequency|
+|depress.v|Experiencer_obj|Experiencer;Stimulus;Degree;Depictive;Manner;Means;Result;Circumstances;Explanation;Time|
+|deprive.v|Prevent_or_allow_possession|Potential_hindrance;State_of_affairs;Time;Place;Agent;Protagonist;Purpose;Duration;Explanation;Frequency;Containing_event|
+|derail.v|Thwarting|Preventing_cause;Protagonist;Action;Time;Place;Manner;Degree;Explanation;Frequency|
+|deride.v|Judgment_communication|Addressee;Communicator;Medium;Topic;Degree;Evaluee;Expressor;Manner;Means;Reason;Role;Result;Depictive;Grounds;Extent_of_acclaim;Time;Place;Internal_cause;Frequency|
+|descale.v|Emptying|Agent;Theme;Source;Path;Goal;Degree;Depictive;Manner;Means;Result;Instrument;Cause;Place;Time;Containing_event;Explanation;Circumstances;Purpose|
+|descend (on).v|Arriving|Theme;Source;Path;Goal;Manner;Means;Mode_of_transportation;Cotheme;Time;New_situation;Depictive;Period_of_iterations;Circumstances;Purpose;Degree;Event_description;Re-encoding;Frequency;Place|
+|descend.v|Motion_directional|Area;Depictive;Distance;Duration;Goal;Manner;Path;Speed;Time;Carrier;Theme;Source;Result;Place;Degree;Point_of_contact;Path_shape;Means;Direction;Explanation;Purpose;Circumstances|
+|descend.v|Path_shape|Source;Path;Goal;Road;Manner;Distance;Area;Degree;Means;Result;Speed;Depictive;Place;Path_shape;Direction;Time;Purpose|
+|descend.v|Traversing|Theme;Source;Path;Goal;Manner;Distance;Area;Degree;Means;Speed;Cotheme;Depictive;Place;Path_shape;Direction;Time;Purpose;Means_of_motion;Duration;Result;Explanation;Reciprocation;Containing_event;Frequency;Re-encoding;New_situation;Circumstances;Endpoints;Coordinated_event;Period_of_iterations;Event_description;Iterations|
+|describe.v|Communicate_categorization|Speaker;Category;Item;Means;Medium;Time;Place;Circumstances;Criteria;Manner;Duration|
+|describe.v|Statement|Speaker;Addressee;Message;Topic;Manner;Means;Internal_cause;Medium;Depictive;Time;Place;Occasion;Particular_iteration;Communicative_force;Degree;Group;Event_description;Frequency;Iterations;Containing_event|
+|descry.v|Becoming_aware|Cognizer;Phenomenon;Ground;State;Evidence;Degree;Manner;Means;Topic;Time;Purpose;Instrument;Frequency;Circumstances;Explanation;Particular_iteration;Period_of_iterations|
+|desert.v|Quitting_a_place|Self_mover;Source;Path;Intended_goal;Manner;Means;Speed;Co-participant;Depictive;Place;Path_shape;Direction;Time;Purpose;Vehicle;Duration_of_final_state;Result;Explanation;Reciprocation;Containing_event;Frequency;Re-encoding;New_situation;Circumstances;Coordinated_event;Distance|
+|deserve.v|Deserving|State_of_affairs;Action;Degree;Domain;Circumstances|
+|desiccate.v|Cause_to_be_dry|Agent;Dryee;Instrument;Manner;Means;Place;Purpose;Time;Cause;Subregion;Duration;Temperature;Degree|
+|design.v|Coming_up_with|Cognizer;Idea;Purpose;Material;Amount_of_progress;Depictive;Manner;Means;Result;Location_of_appearance;Place;Time|
+|designate.v|Appointing|Selector;Official;Role;Degree;Depictive;Manner;Means;Result;Circumstances;Function;Time;Place;Body|
+|designate.v|Linguistic_meaning|Form;Meaning;Textual_location;Referent;Degree|
 # 总结
-本项目旨在收集、整理成目前开放的Schema数据集，用于指导知识图谱构建。
+1、本项目旨在收集、整理成目前开放的Schema数据集，用于指导知识图谱/事件构建。
+2、事件图谱与知识图谱schema的发现，是进行事件图谱建模的一个重要手段，也是十分核心的问题。
